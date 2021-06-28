@@ -4,6 +4,6 @@ metadata:
   name: nginx-kustomize-service
 spec:
   selector:
-    app: nginx-yaml
+    app: nginx-kustomize
   ports:
     - port: 80
