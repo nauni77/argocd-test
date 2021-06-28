@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-kustomize-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+    - hosts:
+        - nginx-yaml.intra.vsa.de
+      secretName: intra-vsa-de
+  rules:
+    - host: nginx-yaml.intra.vsa.de
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx-kustomize-service
+                port:
+                  number: 80

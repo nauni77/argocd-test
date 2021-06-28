@@ -1,0 +1,9 @@
+bases:
+  - ../../base
+
+patchesStrategicMerge:
+  - ./nginx/ingress-nginx.yaml
+
+namePrefix: kustomize-
+
+nameSuffix: -v1
