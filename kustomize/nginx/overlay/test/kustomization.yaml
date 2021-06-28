@@ -2,7 +2,8 @@ bases:
   - ../../base
 
 patchesStrategicMerge:
-  - ./nginx/ingress-nginx.yaml
+  - ./nginx/ingress-test.yaml
+  - ./nginx/deployment-test.yaml
 
 namePrefix: kustomize-
 
