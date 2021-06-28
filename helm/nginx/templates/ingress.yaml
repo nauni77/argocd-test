@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-helm-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  tls:
+    - hosts:
+        - nginx-helm.intra.vsa.de
+      secretName: intra-vsa-de
+  rules:
+    - host: nginx-helm.intra.vsa.de
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: nginx-helm-service
+                port:
+                  number: 80
