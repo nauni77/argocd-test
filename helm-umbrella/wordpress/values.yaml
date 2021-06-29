@@ -118,5 +118,4 @@ wordpress:
     ##       ...
     ##       -----END CERTIFICATE-----
     ##
-    secrets:
-      name: intra-vsa-de
+    secrets: []
