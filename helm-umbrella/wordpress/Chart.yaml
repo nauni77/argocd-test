@@ -23,6 +23,6 @@ version: 0.0.1
 appVersion: 11.0.15
 
 dependencies:
-  - name: bitnami/wordpress
+  - name: wordpress
     version: 11.0.15
     repository: https://charts.bitnami.com/bitnami
