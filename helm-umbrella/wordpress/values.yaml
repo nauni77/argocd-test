@@ -48,7 +48,7 @@ wordpress:
     enabled: true
     ## @param ingress.certManager Add the corresponding annotations for cert-manager integration
     ## => use the self deployed certificate
-    certManager: true
+    certManager: false
     ## @param ingress.pathType Ingress path type
     ##
     pathType: ImplementationSpecific
@@ -73,7 +73,7 @@ wordpress:
     ##   - Relay on cert-manager to create it by setting `ingress.certManager=true`
     ##   - Relay on Helm to create self-signed certificates by setting `ingress.tls=true` and `ingress.certManager=false`
     ##
-    tls: true
+    tls: false
     ## @param ingress.extraHosts An array with additional hostname(s) to be covered with the ingress record
     ## e.g:
     ## extraHosts:
