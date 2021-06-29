@@ -47,8 +47,8 @@ wordpress:
     ##
     enabled: true
     ## @param ingress.certManager Add the corresponding annotations for cert-manager integration
-    ##
-    certManager: false
+    ## => use the self deployed certificate
+    certManager: true
     ## @param ingress.pathType Ingress path type
     ##
     pathType: ImplementationSpecific
