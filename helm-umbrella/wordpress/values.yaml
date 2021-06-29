@@ -98,7 +98,10 @@ wordpress:
     ##     - wordpress.local
     ##   secretName: wordpress.local-tls
     ##
-    extraTls: []
+    extraTls:
+      - hosts:
+        - wordpress-test.intra.vsa.de
+        secretName: intra-vsa-de
     ## @param ingress.secrets Custom TLS certificates as secrets
     ## NOTE: 'key' and 'certificate' are expected in PEM format
     ## NOTE: 'name' should line up with a 'secretName' set further up
