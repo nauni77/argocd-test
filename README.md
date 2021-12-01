@@ -12,3 +12,7 @@ Contains deployments via kustomize.
 ## directory `helm`
 
 Contains deployments via helm charts.
+
+# gitpod
+
+edit with gitpod ...
